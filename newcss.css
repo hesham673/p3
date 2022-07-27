@@ -1,0 +1,620 @@
+
+/* .parent{
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: mem-count;
+}
+.one{
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+} */
+
+/* .one::before{
+    content:attr(data-text);
+   display: none;
+}
+.one:hover::before{
+    display: block;
+} */
+
+
+/* -------------------------look -------------------------------*/
+
+/* .one::before{
+    content: "";
+    width: 0;
+    height: 0px;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    background-color: transparent;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent green transparent transparent;
+}
+
+
+.one::after{
+    content: counter(mem-count);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+    background-color: #009688;
+}
+
+.user{
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+hr{
+    margin: 20px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+ul li::before{
+    content: "";
+    width: 0;
+    height: 0px;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    background-color: transparent;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent green transparent transparent;
+} */
+
+/* ------------------------------------------------------------ */
+
+/* .br{
+    width: 300px;
+    height: 300px;
+    background-color: turquoise;
+    margin: 20px auto;
+    border-top-left-radius: 50px 200px;
+
+} */
+
+/* div{
+    box-shadow: h-shadow || v-shadow || blur || spread || color || inset ;
+   box-shadow: 1px 1px 10px 0 red inset ,    1px 1px 10px 0 red inset,    1px 1px 10px 0 red inset ;
+    box-sizing: border-box;
+    toincludetheborderandpaddingandmarginwiththewidthtransition-duration: 1s;
+    transition-delay: 0.5s ;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition: all 2s 0.5s ease-in-out;
+    -webkit-transition: all 2s 0.5s ease-in-out;
+    -moz-transition: all 2s 0.5s ease-in-out;
+    -ms-transition: all 2s 0.5s ease-in-out;
+    -o-transition: all 2s 0.5s ease-in-out;
+    background-color: bisque !important; this means that this style has more piriority
+} */
+/* *{box-sizing: border-box;} */
+/* ---------------------------------collapsing--------------------------------- */
+/* .parent{
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: #eee;
+}
+.parent .one,
+.parent .two{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.one{
+    background-color: #ddd;
+}
+.two{
+    background-color: #aaa(121, 107, 107);
+}
+.up{
+    background-color: red;
+    color: white;
+    height: 85px;
+    margin-bottom: 20px;
+}
+.down{
+    background-color: green;
+    color: white;
+    height: 85px;
+    margin-top: 30px;
+} */
+/* 
+        only vertical margin collapse
+        bigger margin wins
+        margin collapsing with elements without any thing between
+        nesting dose not prevent collapsing
+*/
+/* ------------------------------var--------------------------------- */
+/* *{
+    text-transform: capitalize;
+}
+:root{
+    --mainColor:rgb(131, 131, 202);
+    --mainPadding:10px;
+}
+.main{
+    background-color:var(--mainColor);
+    color: white;
+    padding: calc(20px + var(--mainPadding));
+}
+h2{
+    color: var(--mainColor);
+    background-color: #eee;
+    padding: var(--mainPadding);
+}
+p{
+    color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    padding: var(--mainPadding);
+}
+a:hover{
+    color: var(--mainColor);
+}
+.local{
+    --mainColor:black;
+    background-color: var(--mainColor);
+    color: white;
+} */
+/* ---------------------------- flex-box------------------------------- */
+/* *{
+    box-sizing: border-box;
+}
+.flex{
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row; */
+    /* flex-wrap: wrap-reverse;
+    flex-flow: row wrap;
+    justify-content: space-evenly; */
+    /* align-items: flex-end;
+    height: 600px;
+    align-content: flex-end;
+
+}
+.flex .one{
+    height: 80px;
+}
+.flex .two{
+    height: 120px;
+}
+.flex div{
+    background-color: #f00;
+    color: white;
+    width: calc(90%/3);
+    text-align: center;
+    padding: 20px;
+
+}
+.float{
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px; 
+    padding: 20px;
+    margin: 20px auto;
+}
+.float div{
+    background-color: #f00;
+    color: white;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+.center{
+    background-color: rgb(196, 93, 196);
+    color: rgb(56, 38, 56);
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px auto;
+} */
+
+/* ---------------------------flex child------------------------- */
+
+/* *{
+    box-sizing: border-box;
+}
+ .flex{
+     background-color: #eee;
+     width: 600px;
+     height: 300px;
+
+     padding: 20px;
+     margin: 20px auto;
+     display: flex;
+     align-items: stretch;
+ }
+
+ .flex div{
+     background-color: red;
+     color: white;
+     width: 100px;
+     text-align: center;
+     padding: 20px;
+     margin-right: 5px;
+     /* flex-grow: 1; */
+     /* flex-shrink:1 ; 
+ } */
+ /* .up11{
+     flex-grow: 1;  */
+    /* flex-shrink: 1;
+
+ } */
+
+  /*.up1{
+     order: 3;
+ }
+ .up2{
+    order: 4;
+} */
+/* .flex .up3{
+    /* flex-grow: 3; 
+    align-self: flex-start;
+    /* flex-shrink: 3;
+    order: 1; 
+ } */
+/* .up4{
+    order: 2;
+}
+.up5{
+    order: 6;
+}
+.up6{
+    order: 5;
+} */
+/* -------------------------------------------------------- */
+/*div{
+     flex-basis: 200px; means start width from 200px if it flex direction row and if column start height from 200 and it respects the max-width 
+    flex: grow shrink basis; 
+    display:inline-flex;
+}*/
+/* img{
+    filter: grayscale(50%);
+    filter: blur(4px);
+    filter: invert(20%);
+    -webkit-filter: invert(20%);
+} */
+/* -----------------------------gradient---------------------- */
+
+/* .grd{
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px;
+}
+.grd::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    height: 10px;
+    background-image: linear-gradient(to right,#2980b9 20%,#27ae60 20%,#27ae60 40%,#d35400 40%,#d35400 60%,#8e44ad 60%,#8e44ad 80%,#c0392b 80%);
+}
+a{
+    pointer-events: none;
+}
+p{caret-color: red;
+} */
+/* -----------------------------------------grid----------------- */
+/* *{
+    box-sizing: border-box;
+}
+
+.parent{
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    /* grid-template-columns: 20% 20% 2% 2% 5%;
+    grid-template-columns: auto auto auto auto; */
+    /* grid-template-columns:repeat(5,10%) ; */
+    /* grid-template-columns: 20px 70px auto 20% 1fr ; */
+   /* grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(3,auto);
+    gap: 3px 3px;
+    justify-content: flex-start;
+    align-content: flex-end;
+}
+
+.parent div{
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+} */
+/* -------------------------------grid 60--------------------------- */
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+.page{
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 50px  auto 50px;
+    grid-template-areas:
+    "logo logo nav nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont cont . side side"
+    "foot foot foot foot foot foot foot foot foot foot";
+}
+h2{
+    grid-area: logo;
+    background-color: red;
+    color: white;
+}
+nav{
+    grid-area: nav;
+    background-color: blue;
+    color: white;
+}
+section{
+    grid-area: cont;
+    background-color: yellow;
+    color: white;
+}
+aside{
+    grid-area: side;
+    background-color: green;
+    color: white;
+}
+footer{
+    grid-area: foot;
+    background-color: black;
+    color: white;
+} */
+/* ------------------------child 61-------------------------------- */
+/* *{
+    box-sizing: border-box;
+}
+.parent{
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns:repeat(6,1fr);
+    gap: 10px 10px;
+}
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+/* .one{
+    grid-column:2/span 5 ;
+    grid-row: 2/span 2;
+} */
+/* .ten{ 
+    grid-area: 3/3/5/6;
+} */
+/* --------------------------------------------------------- */
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+}
+.parent{
+    margin: 20px auto;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+}
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+   
+}
+ */
+/* ------------------------------transform------------------------- */
+/*div{
+    transform:scale(1,1);
+    transform: matrix(scalex(),skewy(),skewx(),scaley(),translatex(),translatey());
+    transform:scale(1.3) rotate(5deg) translate(50%,50%) skew(30deg,10deg);
+    -webkit-transform:ro;
+    -moz-transform:ro;
+    -ms-transform:ro;
+    -o-transform:ro;
+    transform-origin: 0 0;
+}*/
+/* div{
+    transform:rotate3d(0 ,0 ,0 ,65deg);
+    transform:translate3d(0,0,50px);
+    perspective: 300px;
+    perspective-origin: 50% 50%;
+}  */
+/* ------------------------backface----------------------------- */
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: 40px auto;
+    width: 200px;
+    perspective: 600px;
+}
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.box:hover{
+    transform: rotateY(180deg);
+}
+.box .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    backface-visibility:hidden;
+}
+.front{
+    background-color: violet;
+}
+.back{
+    background-color: teal;
+    transform: rotateY(180deg);
+} */
+/* ---------------------------animation-------------------------- */
+/* div{
+    animation-name: coloring;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-delay: -2s;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation: coloring 6s linear 2s infinite reverse;
+}
+@keyframes coloring{
+    0%{
+
+    }
+    50%{
+
+    }
+    100%{
+
+    }
+} */
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+}
+.load{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+.load div{
+    width: 20px;
+    height: 20px;
+    background-color: orchid;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: ud;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.load .two{
+    animation-delay: .3s;
+}
+.load .three{
+    animation-delay: .6s;
+}
+@keyframes ud{
+    to{
+        opacity: .2;
+        transform: translateY(-20px);
+    }
+} */
+/* ---------------------------------selectors--------------------- */
+div + p => the p before it div
+p ~ div => any div after p but both are childs to the same parent
+[title] => any element has attribute title
+[title=val] => any element has attribute  title with value val
+p[title] => the element p has attribute title
+p[title=val] => the element p has attribute title has value val
+[attribute ~= val] => any element with attribute its value contains word val ex: title="test val"
+[attribute *= val] => any element with attribute its value contains string val ex: title="testval" title="test val"
+[attribute ^= val] => any element with attribute its value starts with val ex: title="valtest" title="val test"
+:first-child
+:last-child
+:first-of-type
+:last-of-type
+:only-child
+:only-of-type
+:not(selector)
+:nth-child(n)
+:nth-last-child(n)
+:nth-of-type(n)
+:nth-last-of-type(n)
+:root
+:checked
+:empty
+:disabled
+:required
+:focus
+::selection
+::placeholder
+@media print{
+    
+}
+@media (min-width:1000px) and (max-width:1400px5) {
+    
+}
